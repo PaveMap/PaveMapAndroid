@@ -1,6 +1,5 @@
 package com.ttp.pavemap.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.FragmentActivity;
@@ -42,8 +41,7 @@ public class SplashScreenActivity extends FragmentActivity {
             public void run() {
                 // This method will be executed once the timer is over
                 // Start your app main activity
-                Intent i = new Intent(SplashScreenActivity.this, AccountSignInActivity.class);
-                startActivity(i);
+                
 
                 // close this activity
                 finish();

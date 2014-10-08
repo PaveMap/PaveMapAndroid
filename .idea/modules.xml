@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PaveMap.iml" filepath="$PROJECT_DIR$/PaveMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PaveMapAndroid.iml" filepath="$PROJECT_DIR$/PaveMapAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/facebook/facebook.iml" filepath="$PROJECT_DIR$/facebook/facebook.iml" />
     </modules>
