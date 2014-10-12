@@ -1,15 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/dark_violet">
 
-    <TextView
-        android:id="@+id/sign_in"
-        android:layout_width="@dimen/dimen_250_500"
-        android:layout_height="@dimen/dimen_45_90"
-        android:layout_centerInParent="true"
-        android:text="Sign In with Facebook"
-        android:gravity="center"
-        android:background="@color/blue_facebook"
-        android:textSize="@dimen/text_15_30"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen180"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen20"
+        android:paddingRight="@dimen/dimen20">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen40"
+            android:background="@drawable/background_rounded_all_white"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="@dimen/dimen10"
+            android:paddingRight="@dimen/dimen10"
+            android:textSize="@dimen/text15" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen40"
+            android:layout_marginTop="@dimen/dimen10"
+            android:background="@drawable/background_rounded_all_white"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/dimen10"
+            android:paddingRight="@dimen/dimen10"
+            android:textSize="@dimen/text15" />
+
+        <TextView
+            android:id="@+id/log_in"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen40"
+            android:layout_marginTop="@dimen/dimen20"
+            android:background="@drawable/background_rounded_all_indigo"
+            android:gravity="center"
+            android:text="@string/log_in"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen30"
+            android:layout_gravity="center_horizontal"
+            android:gravity="top"
+            android:paddingTop="@dimen/dimen5"
+            android:text="@string/forgot_password"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen20"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen20"
+        android:paddingRight="@dimen/dimen20">
+
+        <LinearLayout
+            android:id="@+id/facebook"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/dimen40"
+            android:layout_marginRight="@dimen/dimen10"
+            android:layout_weight="1"
+            android:background="@drawable/background_rounded_all_blue_facebook"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dimen40"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:padding="@dimen/dimen10"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_facebook_white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/facebook"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text15"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/dimen40"
+            android:layout_marginLeft="@dimen/dimen10"
+            android:layout_weight="1"
+            android:background="@drawable/background_rounded_all_indigo"
+            android:gravity="center"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text15"
+            android:textStyle="bold" />
+    </LinearLayout>
+
 </RelativeLayout>

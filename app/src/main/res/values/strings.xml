@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">Pave Map</string>
     <string name="fb_app_id">636105886487639</string>
+
+    <!--AccountSignInActivity-->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="sign_up">Sign Up</string>
+    <string name="facebook">Facebook</string>
+
+    <!--MainActivity-->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
 </resources>
