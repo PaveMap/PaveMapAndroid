@@ -84,7 +84,7 @@ public class MainActivity extends ActionBarActivity {
             selectItem(0);
         }
 
-        startActivityForResult(new Intent(this, AccountSignInActivity.class), REQUEST_SIGN_IN);
+        startActivityForResult(new Intent(this, AccountActivity.class), REQUEST_SIGN_IN);
     }
 
     @Override

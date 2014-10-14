@@ -73,32 +73,17 @@
         android:paddingLeft="@dimen/dimen20"
         android:paddingRight="@dimen/dimen20">
 
-        <LinearLayout
+        <com.facebook.widget.LoginButton xmlns:fb="http://schemas.android.com/apk/res-auto"
             android:id="@+id/facebook"
             android:layout_width="0dip"
             android:layout_height="@dimen/dimen40"
             android:layout_marginRight="@dimen/dimen10"
             android:layout_weight="1"
-            android:background="@drawable/background_rounded_all_blue_facebook"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="@dimen/dimen40"
-                android:layout_height="match_parent"
-                android:contentDescription="@null"
-                android:padding="@dimen/dimen10"
-                android:scaleType="fitCenter"
-                android:src="@drawable/icon_facebook_white" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:text="@string/facebook"
-                android:textColor="@color/white"
-                android:textSize="@dimen/text15"
-                android:textStyle="bold" />
-        </LinearLayout>
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text15"
+            android:textStyle="bold"
+            fb:login_text="@string/facebook" />
 
         <TextView
             android:id="@+id/sign_up"

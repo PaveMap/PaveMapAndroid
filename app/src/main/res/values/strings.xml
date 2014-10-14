@@ -2,7 +2,7 @@
     <string name="app_name">Pave Map</string>
     <string name="fb_app_id">636105886487639</string>
 
-    <!--AccountSignInActivity-->
+    <!--AccountActivity-->
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="log_in">Log In</string>
